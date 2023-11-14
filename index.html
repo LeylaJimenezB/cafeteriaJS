@@ -3,12 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- normalize.css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- main.css -->   
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>Café Amanecer</title>
 </head>
 <body>
+    <header>
 
-    <h1>HOLA MUNDO</h1>
+        <nav class="navegacion">
+            <!-- <img class="logo" src="img/Logo.png" alt="logo taza cafe">    -->
+            
+            
+            <ul class="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <h1 class="titulo">Café Amanecer</h1>
+            <p class="subtitulo">Coffeeshop</p>
+        </div>
+            
+
+    </header>
+
+    <main>
+        
+        <section class="descripcion">
+            <h2>All you need is a cup of coffee...</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, modi..
+            </p>
+            
+            <img class="taza" src="img/taza.jpg" alt="taza de cafe ">
+            
+        </section>
+
+        <section class="menu">
+            <h2>Nuestro menú</h2>
+            <p>
+                Productos y precios:
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <table>
+                <thead>
+                  <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Expreso</td>
+                    <td>€2.50</td>
+                  </tr>
+                  <tr>
+                    <td>Cappuccino</td>
+                    <td>€3.00</td>
+                  </tr>
+                  <tr>
+                    <td>Latte </td>
+                    <td>€2.75</td>
+                  </tr>
+                  <tr>
+                    <td>Mocha</td>
+                    <td>€2.50</td>
+                  </tr>
+                  <tr>
+                    <td>Macchiato</td>
+                    <td>€3.50</td>
+                  </tr>
+                  <tr>
+                    <td>Frappé</td>
+                    <td>€3.25</td>
+                  </tr>
+                  <tr>
+                    <td>Doppio</td>
+                    <td>€2.75</td>
+                  </tr>
+        
+                </tbody>
+            </table>
+
+
+        </section>
+
+        <section class="nosotros">
+            <h2>Sobre nosotros</h2>
+            <p>
+                Historia y mision:
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi harum ipsum sint accusamus? Quisquam minus fugit fugiat corrupti, consequuntur quia accusamus culpa natus, ratione distinctio cum illo perspiciatis tempore error.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, sed perspiciatis mollitia modi, sint soluta voluptates hic nihil quasi minus suscipit quaerat voluptate a aliquid ad atque officiis! Itaque eos in expedita? Repudiandae harum esse non a. Nemo asperiores consectetur, illum recusandae deserunt totam sunt possimus, dignissimos voluptatem, voluptate quaerat.
+            </p>
+
+         
+
+        </section>
+
+        <section>
+            <h2>Galeria</h2>
+          
+            <div class="galeria">
+                <img src="/img/menu.jpg" alt="">
+                <img src="/img/Cafetera.jpg" alt="">
+                <img src="/img/variasTazas.jpg" alt="">
+                <img src="/img/Café bajo la lluvia.jpg" alt="">
+                <img src="/img/cafe3.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <p>Envianos un mensaje</p>
+            <div>
+
+            </div>
+                <form class="formulario" action="enviar.php" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+
+            <div class="mapa">         
+                <p class="ubicacion">Mapa interactivo </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d41326.92986715103!2d2.15100420674455!3d41.3905384491456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1snl!2snl!4v1699820714434!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <p>&copy; Derechos Reservados</p>  
+
+    </footer>
     
     <script src="js/main.js"></script>
 </body>
